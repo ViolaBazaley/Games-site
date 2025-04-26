@@ -262,9 +262,3 @@ console.log(arr11.reduce((a, b) => a + b) / arr11.length);
 //2 вариант
 // const averageNumber = arr11.reduce ((a, b) => a + b) / arr11.length;
 //  console.log(averageNumber);
- 
-
-
-
-
-
