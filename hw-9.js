@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     changeDescriptionButton.addEventListener("click", () => {
         document.querySelectorAll(".description").forEach(el => {
-            el.textContent = "Измененный текст";
+            el.textContent = "Измени текст";
         });
     });
 
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     addParagraphButton.addEventListener("click", () => {
         const newParagraph = document.createElement("p");
-        newParagraph.textContent = "Новый абзац";
+        newParagraph.textContent = "Новый элемент";
         document.body.appendChild(newParagraph);
     });
 
