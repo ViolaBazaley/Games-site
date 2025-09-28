@@ -68,4 +68,36 @@ function gameQuiz() {
     }
 
     alert(`Вы ответили правильно на ${correctCount} из ${quiz.length} вопросов.`);
+
 }
+
+
+function stonePaperScissors() {
+
+    const userChoice = prompt("Выберите: камень, ножницы или бумага").toLowerCase();
+
+    // if (!["камень", "ножницы", "бумага"].includes(userChoice)) {
+    //     alert("Неверный выбор. Попробуйте снова.");
+    //     return;
+    // }
+
+    const choices = ["камень", "ножницы", "бумага"];
+    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+    let result;
+    if (userChoice === computerChoice) {
+        result = "Ничья!";
+    } else if (
+        (userChoice === "камень" && computerChoice === "ножницы") ||
+        (userChoice === "ножницы" && computerChoice === "бумага") ||
+        (userChoice === "бумага" && computerChoice === "камень")
+    ) {
+        result = "Ура, вы победили!";
+    } else {
+        result = "К сожалению, Вы проиграли!";
+    }
+    alert(`${result}`);
+
+    // alert(`Ваш выбор: ${userChoice}\nВыбор компьютера: ${computerChoice}\n${result}`);
+} 
+
