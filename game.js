@@ -69,3 +69,4 @@ function gameQuiz() {
 
     alert(`Вы ответили правильно на ${correctCount} из ${quiz.length} вопросов.`);
 }
+
