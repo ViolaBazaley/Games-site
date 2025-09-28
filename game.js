@@ -68,6 +68,7 @@ function gameQuiz() {
     }
 
     alert(`Вы ответили правильно на ${correctCount} из ${quiz.length} вопросов.`);
+
 }
 
 
@@ -99,3 +100,4 @@ function stonePaperScissors() {
 
     // alert(`Ваш выбор: ${userChoice}\nВыбор компьютера: ${computerChoice}\n${result}`);
 } 
+
